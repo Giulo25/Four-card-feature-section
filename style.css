@@ -88,6 +88,7 @@ span {
   align-self: center;
   justify-self: end;
 }
+
 .builder {
   border-top: 4px solid hsl(0, 78%, 62%);
   grid-column: 2/3;
@@ -108,20 +109,57 @@ span {
 
 /* media queries */
 
-/* 1156px */
+/* 1056px */
 @media (max-width: 66em) {
   main {
     padding: 8rem 6rem;
   }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .supervisor {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: stretch;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+  }
+  .supervisor .img {
+    margin-top: auto;
+  }
+  .builder {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+  }
+  .karma {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+  }
+  .karma .img {
+    margin-top: auto;
+  }
+  .calculator {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: start;
+  }
 }
 
-/* 784px */
-@media (max-width: 49em) {
+/* 640px */
+@media (max-width: 40em) {
   main {
     padding: 8rem 3rem;
   }
   h1 {
     font-size: 2.4rem;
+    line-height: 1.5;
   }
   .text {
     max-width: 35rem;
@@ -146,16 +184,18 @@ span {
   .supervisor {
     grid-column: 1/1;
     grid-row: 1/2;
-    align-self: center;
     justify-self: center;
   }
   .builder {
     grid-column: 1/1;
     grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
   }
   .karma {
     grid-column: 1/1;
     grid-row: 3/4;
+    justify-self: center;
   }
   .calculator {
     grid-column: 1/1;
