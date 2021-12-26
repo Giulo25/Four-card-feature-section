@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: hsl(229, 6%, 66%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #222222;
+}
+main {
+  max-width: 144.4rem;
+  margin: 0 auto;
+  padding: 8rem 16rem;
+  background-color: hsl(0, 0%, 98%);
+}
+h1 {
+  font-size: 3.6rem;
+  font-weight: 200;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: hsl(234, 12%, 34%);
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+span {
+  font-weight: 600;
+}
+
+.text {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.text p {
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 3rem;
+  max-width: 120rem;
+}
+.card {
+  max-width: 35rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.card p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+.img {
+  display: flex;
+  justify-content: end;
+  margin-top: 4rem;
+}
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: end;
+}
+.builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  grid-column: 3/4;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: start;
+}
+
+/* media queries */
+
+/* 1156px */
+@media (max-width: 66em) {
+  main {
+    padding: 8rem 6rem;
+  }
+}
+
+/* 784px */
+@media (max-width: 49em) {
+  main {
+    padding: 8rem 3rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  .text {
+    max-width: 35rem;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .card {
+    padding: 2rem 3rem;
+  }
+  .card p {
+    margin-top: 0.5rem;
+  }
+  .img {
+    margin-top: 2rem;
+  }
+  img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .supervisor {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+  }
+  .builder {
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+  .karma {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+  .calculator {
+    grid-column: 1/1;
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: center;
+  }
+}
