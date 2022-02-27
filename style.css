@@ -62,7 +62,7 @@ span {
   grid-template-rows: auto;
   justify-items: center;
   gap: 3rem;
-  max-width: 100rem;
+  max-width: 110rem;
   margin: auto;
 }
 .card {
