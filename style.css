@@ -22,7 +22,7 @@ body {
 main {
   max-width: 144.4rem;
   margin: 0 auto;
-  padding: 8rem;
+  padding: 8rem 0;
   background-color: hsl(0, 0%, 98%);
 }
 h1 {
