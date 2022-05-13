@@ -17,12 +17,12 @@ body {
   color: hsl(229, 6%, 66%);
   font-size: 1.5rem;
   font-weight: 400;
-  background-color: #222222;
+  /* background-color: #222222; */
 }
 main {
   max-width: 144.4rem;
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 8rem 16rem;
   background-color: hsl(0, 0%, 98%);
 }
 h1 {
@@ -43,8 +43,8 @@ span {
 }
 
 .text {
-  max-width: 54ch;
-  margin: auto;
+  max-width: 50rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,11 +59,10 @@ span {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr;
   justify-items: center;
   gap: 3rem;
-  max-width: 110rem;
-  margin: auto;
+  max-width: 120rem;
 }
 .card {
   max-width: 35rem;
