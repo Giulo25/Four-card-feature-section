@@ -126,9 +126,10 @@ span {
     display: flex;
     flex-direction: column;
   }
-  .supervisor .img {
+  /*.supervisor .img {
     margin-top: auto;
-  }
+  }*/
+  
   .builder {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -141,9 +142,9 @@ span {
     display: flex;
     flex-direction: column;
   }
-  .karma .img {
+  /*.karma .img {
     margin-top: auto;
-  }
+  }*/
   .calculator {
     grid-column: 2/3;
     grid-row: 2/3;
